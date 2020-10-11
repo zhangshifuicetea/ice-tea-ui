@@ -21,3 +21,5 @@ declare global {
 
     type ClassValue = string | string[] | { [k: string]: any } | undefined | false | null;
 }
+
+export {default as Icon} from './icon/icon';

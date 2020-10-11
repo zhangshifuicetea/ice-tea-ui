@@ -1,11 +1,11 @@
 {
   "name": "ice-tea-ui",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "React UI components library",
   "main": "dist/index.js",
   "types": "dist/lib/index",
   "files": [
-    "/dis/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
