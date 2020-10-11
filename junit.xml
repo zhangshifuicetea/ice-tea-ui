@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="4.801">
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2020-10-11T08:10:16" time="2.3" tests="2">
+    <testcase classname="icon render" name="icon render" time="0.018">
+    </testcase>
+    <testcase classname="icon onClick" name="icon onClick" time="0.052">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2020-10-11T08:10:18" time="0.31" tests="3">
+    <testcase classname="classes accept 1 className" name="classes accept 1 className" time="0.002">
+    </testcase>
+    <testcase classname="classes accept 2 classNames" name="classes accept 2 classNames" time="0">
+    </testcase>
+    <testcase classname="classes accept undefined" name="classes accept undefined" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-10-11T08:10:19" time="0.306" tests="1">
+    <testcase classname=" hello" name=" hello" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
