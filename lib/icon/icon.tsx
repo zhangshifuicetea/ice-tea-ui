@@ -1,7 +1,7 @@
 import React from 'react';
 import './importAllIcon';
 import './icon.scss';
-import {classes, createScopedClasses} from '../../helpers/classes';
+import {classes, createScopedClasses} from '../../utils/classes';
 
 interface IconProps extends React.HtmlHTMLAttributes<HTMLElement> {
     name: string;
