@@ -10,7 +10,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/lib'),
-        library: 'IceTea',
+        library: 'iceTea',
         libraryTarget: 'umd',
     },
     resolve: {
@@ -41,13 +41,13 @@ module.exports = {
                 use: [{loader: 'tslint-loader'}],
             },
             {
-                test: /icons.+\.svg$/,
+                test: /\.svg$/,
                 loader: 'svg-sprite-loader',
             },
-            {
-                test: /guui\.svg$/,
-                loader: 'file-loader',
-            },
+            // {
+            //     test: /guui\.svg$/,
+            //     loader: 'file-loader',
+            // },
             {
                 test: /\.md$/,
                 loader: 'text-loader',
@@ -65,7 +65,9 @@ module.exports = {
                     {
                         loader: "sass-loader",
                         options: {
-                            includePaths: [path.resolve(__dirname, 'stylesheets', 'include')]
+                            sassOptions: {
+                                includePaths: [path.resolve(__dirname, 'stylesheets', 'include')]
+                            },
                         }
                     }]
             }
