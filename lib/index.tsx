@@ -1,14 +1,4 @@
 import React, {CSSProperties} from 'react';
-import ReactDOM from 'react-dom';
-import Icon from './icon/icon';
-
-ReactDOM.render(
-    <div>
-        <Icon name={'alipay'}/>
-        <Icon name={'wechat'}/>
-    </div>,
-    document.getElementById('root')
-);
 
 declare global {
     interface IceTeaFunctionComponent<P = {}> extends React.FunctionComponent<P> {

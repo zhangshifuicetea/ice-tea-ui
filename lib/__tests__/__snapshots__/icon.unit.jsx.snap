@@ -18,22 +18,3 @@ exports[`icon render 1`] = `
   </svg>
 </span>
 `;
-
-exports[`icon snapshot 1`] = `
-<span
-  className="ice-tea-icon-wrapper"
->
-  <svg
-    className="ice-tea-icon ice-tea-icon-wechat"
-    style={
-      Object {
-        "fill": undefined,
-      }
-    }
-  >
-    <use
-      xlinkHref="#wechat"
-    />
-  </svg>
-</span>
-`;
