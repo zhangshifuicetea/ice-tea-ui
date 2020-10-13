@@ -2,18 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
 import IconExample from './icon.example';
+import DialogExample from './dialog.example';
+import LayoutExample from './layout.example';
+import {Aside, Content, Footer, Header, Layout} from '../lib/layout/layout';
+import logo from '../assets/logo.png';
+import './index.scss';
 
 ReactDOM.render(
     <Router>
-        <div>
-            <header>
+        <Layout className={'site-page'}>
+            <Header className={'site-header'}>
                 <div className="logo">
-                    Ice-Tea-UI
+                    <img src={logo} alt="logo" height={60}/>
                 </div>
-            </header>
+            </Header>
 
-            <div>
-                <aside>
+            <Layout className={'site-main'}>
+                <Aside className={'site-aside'}>
                     <h2>组件</h2>
                     <ul>
                         <li>
@@ -22,13 +27,22 @@ ReactDOM.render(
                         <li>
                             <Link to={'/button'}>Button</Link>
                         </li>
+                        <li>
+                            <Link to={'/dialog'}>Dialog</Link>
+                        </li>
+                        <li>
+                            <Link to={'/layout'}>Layout</Link>
+                        </li>
                     </ul>
-                </aside>
-                <main>
+                </Aside>
+                <Content className={'site-content'}>
                     <Route path={'/icon'} component={IconExample}/>
-                </main>
-            </div>
-        </div>
+                    <Route path={'/dialog'} component={DialogExample}/>
+                    <Route path={'/layout'} component={LayoutExample}/>
+                </Content>
+            </Layout>
+            <Footer className={'site-footer'}>&copy; Zhang Shifu</Footer>
+        </Layout>
     </Router>,
     document.getElementById('root')
 );

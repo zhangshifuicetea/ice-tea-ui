@@ -1,4 +1,5 @@
 import React, {CSSProperties} from 'react';
+import 'stylesheets/reset.scss';
 
 declare global {
     interface IceTeaFunctionComponent<P = {}> extends React.FunctionComponent<P> {
