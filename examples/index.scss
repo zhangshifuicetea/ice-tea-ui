@@ -42,19 +42,26 @@ $primary-color: #4265f3;
   }
   overflow-y: auto;
   ul {
-    padding: 12px;
     min-width: 12em;
     > li {
-      padding: 8px 0;
       a {
-        color: $primary-color;
+        color: #333;
+        display: block;
+        padding: 8px;
+        &:hover {
+          color: $primary-color;
+        }
+        &.active {
+          color: white;
+          background: $primary-color;
+        }
       }
     }
   }
 }
 
 .site-content {
-
+  padding-left: 20px;
 }
 
 .site-footer {

@@ -10,7 +10,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.prod.js",
-    "docs": "cross-env NODE_ENV=production webpack -p --config webpack.config.docs.js",
+    "docs": "cross-env NODE_ENV=production webpack -p --config webpack.config.doc.js",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.js",
     "ci": "cross-env NODE_ENV=test jest --config=jest.config.ci.js",
     "task": "node ./tasks/index.js"
@@ -36,6 +36,7 @@
     "babel-jest": "26.5.2",
     "babel-loader": "8.1.0",
     "babel-preset-react-app": "9.1.2",
+    "clean-webpack-plugin": "3.0.0",
     "cross-env": "7.0.2",
     "css-loader": "4.3.0",
     "enzyme": "3.11.0",
@@ -46,6 +47,8 @@
     "jest-junit": "12.0.0",
     "mini-css-extract-plugin": "1.0.0",
     "node-sass": "4.14.1",
+    "prism-react-renderer": "1.1.1",
+    "raw-loader": "4.0.2",
     "react-test-renderer": "16.13.1",
     "sass-loader": "10.0.3",
     "style-loader": "2.0.0",

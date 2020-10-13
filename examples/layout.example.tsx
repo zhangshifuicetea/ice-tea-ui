@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../lib/layout/layout';
 import Header from '../lib/layout/header';
-import Content from 'lib/layout/content';
+import Content from '../lib/layout/content';
 import Footer from '../lib/layout/footer';
 import '../lib/layout/layout.scss';
 import Aside from '../lib/layout/aside';
