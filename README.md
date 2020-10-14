@@ -10,3 +10,8 @@ React UI components library
 yarn install
 yarn start
 ~~~
+
+```js
+import {Icon, Input, Layout, Content, Aside, Footer, Header, Button, Dialog} from 'ice-tea-ui';
+
+```
