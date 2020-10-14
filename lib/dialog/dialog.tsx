@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {classes, createScopedClasses} from '../../utils/classes';
 import './dialog.scss';
 import {Icon} from '../index';
+import Button from '../button/button';
 
 interface Props {
     visible: boolean;
@@ -92,8 +93,8 @@ const confirm = (content: string, yes?: () => void, no?: () => void, title?: str
     };
 
     const buttons = [
-        <button onClick={onYes} key={1}>yes</button>,
-        <button onClick={onNo} key={2}>no</button>
+        <Button level="important" onClick={onYes} key={1}>yes</Button>,
+        <Button style={{marginLeft: 15}} onClick={onNo} key={2}>no</Button>
     ];
 
     const close = createDialog(content, buttons, title);

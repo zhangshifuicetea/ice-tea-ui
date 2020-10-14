@@ -1,0 +1,39 @@
+@import "stylesheets/include/helper";
+
+.#{$prefix}-button {
+  padding: 4px 16px;
+  line-height: 22px;
+  transition: all 250ms;
+  cursor: pointer;
+  border-radius: 2px;
+  &:focus {
+    outline: none;
+  }
+  &-normal {
+    color: #333;
+    border: 1px solid lighten(#333, 50%);
+    background: white;
+    &:hover, &:focus {
+      border-color: $main-color;
+      color: $main-color;
+    }
+  }
+  &-important {
+    color: white;
+    border: 1px solid $main-color;
+    background: $main-color;
+    &:hover, &:focus {
+      background: lighten($main-color, 10%);
+      border-color: lighten($main-color, 10%);
+    }
+  }
+  &-danger {
+    color: white;
+    border: 1px solid $red;
+    background: $red;
+    &:hover, &:focus {
+      background: lighten($red, 10%);
+      border-color: lighten($red, 10%);
+    }
+  }
+}

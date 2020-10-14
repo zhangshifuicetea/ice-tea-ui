@@ -11,7 +11,7 @@ const LayoutExample = () => {
     return (
         <div>
             <div>
-                <h1>Example 1</h1>
+                <h1>基本布局</h1>
                 <Layout style={{height: 300, width: 500}}>
                     <Header className={'x'}>header</Header>
                     <Content className={'y'}>content</Content>
@@ -19,7 +19,7 @@ const LayoutExample = () => {
                 </Layout>
             </div>
             <div>
-                <h1>Example 2</h1>
+                <h1>有侧边栏</h1>
                 <Layout style={{height: 300, width: 500}}>
                     <Header className={'x'}>header</Header>
                     <Layout>
@@ -30,18 +30,7 @@ const LayoutExample = () => {
                 </Layout>
             </div>
             <div>
-                <h1>Example 3</h1>
-                <Layout style={{height: 300, width: 500}}>
-                    <Header className={'x'}>header</Header>
-                    <Layout>
-                        <Content className={'y'}>content</Content>
-                        <Aside className={'z'} style={{width: 100, marginLeft: 4}}>aside</Aside>
-                    </Layout>
-                    <Footer className={'x'}>footer</Footer>
-                </Layout>
-            </div>
-            <div>
-                <h1>Example 4</h1>
+                <h1>嵌套布局</h1>
                 <Layout style={{height: 300, width: 500}}>
                     <Aside className={'z'} style={{width: 100, marginRight: 4}}>aside</Aside>
                     <Layout>

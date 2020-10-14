@@ -1,7 +1,5 @@
 const path = require('path')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const {CheckerPlugin} = require('awesome-typescript-loader')
-const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin;
+
 
 const devMode = process.env.NODE_ENV !== 'production'
 
@@ -46,6 +44,5 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
     ]
 }

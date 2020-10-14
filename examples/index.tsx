@@ -7,6 +7,8 @@ import LayoutExample from './layout.example';
 import {Aside, Content, Footer, Header, Layout} from '../lib/layout/layout';
 import logo from '../assets/logo.png';
 import './index.scss';
+import {Icon} from '../lib';
+import ButtonExample from './button.example';
 
 ReactDOM.render(
     <Router>
@@ -15,6 +17,10 @@ ReactDOM.render(
                 <div className="logo">
                     <img src={logo} alt="logo" height={60}/>
                 </div>
+                <div/>
+                <a href={'https://github.com/zhangshifuicetea/ice-tea-ui'} target={'blank'} rel="noopener" style={{display: 'block'}}>
+                    <Icon name={'github'} style={{fontSize: 32, marginRight: 30}}/>
+                </a>
             </Header>
 
             <Layout className={'site-main'}>
@@ -28,17 +34,18 @@ ReactDOM.render(
                             <NavLink to={'/button'}>Button</NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/dialog'}>Dialog</NavLink>
+                            <NavLink to={'/layout'}>Layout</NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/layout'}>Layout</NavLink>
+                            <NavLink to={'/dialog'}>Dialog</NavLink>
                         </li>
                     </ul>
                 </Aside>
                 <Content className={'site-content'}>
                     <Route path={'/icon'} component={IconExample}/>
-                    <Route path={'/dialog'} component={DialogExample}/>
+                    <Route path={'/button'} component={ButtonExample}/>
                     <Route path={'/layout'} component={LayoutExample}/>
+                    <Route path={'/dialog'} component={DialogExample}/>
                 </Content>
             </Layout>
             <Footer className={'site-footer'}>&copy; Zhang Shifu</Footer>
