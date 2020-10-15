@@ -4,7 +4,6 @@ import TreeItem from './tree-item';
 
 
 const Tree: React.FC<TreeProps> = (props) => {
-    console.log(props.sourceData, 'items');
     return (
         <div>
             {props.sourceData?.map(item =>
