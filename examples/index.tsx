@@ -10,6 +10,7 @@ import './index.scss';
 import {Icon} from '../lib';
 import ButtonExample from './button.example';
 import InputExample from './input.example';
+import TreeExample from './tree.example';
 
 ReactDOM.render(
     <Router>
@@ -43,6 +44,9 @@ ReactDOM.render(
                         <li>
                             <NavLink to={'/input'}>Input</NavLink>
                         </li>
+                        <li>
+                            <NavLink to={'/tree'}>Tree</NavLink>
+                        </li>
                     </ul>
                 </Aside>
                 <Content className={'site-content'}>
@@ -51,6 +55,7 @@ ReactDOM.render(
                     <Route path={'/layout'} component={LayoutExample}/>
                     <Route path={'/dialog'} component={DialogExample}/>
                     <Route path={'/input'} component={InputExample}/>
+                    <Route path={'/tree'} component={TreeExample}/>
                 </Content>
             </Layout>
             <Footer className={'site-footer'}>&copy; Zhang Shifu</Footer>

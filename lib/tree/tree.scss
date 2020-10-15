@@ -1,0 +1,50 @@
+@import "stylesheets/include/helper";
+
+.#{$prefix}-tree {
+  &-item {
+    //border-bottom: 1px dashed lightgray;
+    line-height: 1.5;
+  }
+  &-level-1 {
+    .#{$prefix}-tree-text {
+      padding-left: 0;
+    }
+  }
+  &-level-2 {
+    .#{$prefix}-tree-text {
+      padding-left: 1em;
+    }
+  }
+  &-level-3 {
+    .#{$prefix}-tree-text {
+      padding-left: 2em;
+    }
+  }
+  &-level-4 {
+    .#{$prefix}-tree-text {
+      padding-left: 3em;
+    }
+  }
+  &-level-5 {
+    .#{$prefix}-tree-text {
+      padding-left: 3em;
+    }
+  }
+  &-text {
+    display: block;
+    > span {
+      float: right;
+      cursor: pointer;
+    }
+    &:hover {
+      background: yellow;
+    }
+  }
+  &-children {
+    overflow: hidden;
+    transition: height 200ms;
+    &-gone {
+      height: 0;
+    }
+  }
+}

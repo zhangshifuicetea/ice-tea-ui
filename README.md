@@ -12,6 +12,6 @@ yarn start
 ~~~
 
 ```js
-import {Icon, Input, Layout, Content, Aside, Footer, Header, Button, Dialog} from 'ice-tea-ui';
+import {Icon, Input, Layout, Content, Aside, Footer, Header, Tree, Button, Dialog} from 'ice-tea-ui';
 
 ```

@@ -28,3 +28,4 @@ export {default as Dialog, createDialog, confirm} from './dialog/dialog';
 export {Layout, Content, Aside, Header, Footer} from './layout/layout';
 export {default as Button} from './button/button';
 export {default as Input} from './input/input';
+export {default as Tree} from './tree/tree';

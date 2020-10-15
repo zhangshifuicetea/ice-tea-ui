@@ -1,6 +1,6 @@
 import {lowerFirstLetter} from './namer';
 
-const prefix = 'ice-tea';
+export const prefix = 'ice-tea';
 
 function classArray(this: void, ...args: ClassValue[]): string[] {
     return unique(flatten(args.map((c: ClassValue) => {
@@ -40,7 +40,7 @@ function flatten(arr: any[]) {
     while (stack.length > 0) {
         const next = stack.pop();
         if (Array.isArray(next)) {
-            stack.push(next);
+            stack.push(...next);
         } else {
             res.push(next);
         }
